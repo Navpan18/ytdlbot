@@ -14,9 +14,9 @@ from blinker import signal
 # general settings
 WORKERS: int = int(os.getenv("WORKERS", 10))
 PYRO_WORKERS: int = int(os.getenv("PYRO_WORKERS", 100))
-APP_ID: int = int(os.getenv("APP_ID", 198214))
-APP_HASH = os.getenv("APP_HASH", "1234b90")
-TOKEN = os.getenv("TOKEN", "1234")
+APP_ID: int = int(20295350)
+APP_HASH = str("805a0a86f3b382d904617d0a2fd4fb6f")
+TOKEN = str("6718500924:AAHljBZcqaegxtDMOODLomnbeR625E-s5uw")
 
 REDIS = os.getenv("REDIS", "redis")
 
@@ -26,7 +26,7 @@ TG_MAX_SIZE = 2000 * 1024 * 1024
 EXPIRE = 24 * 3600
 
 ENABLE_VIP = os.getenv("VIP", False)
-OWNER = os.getenv("OWNER", "BennyThink")
+OWNER = str("navpan18")
 
 # limitation settings
 AUTHORIZED_USER: str = os.getenv("AUTHORIZED_USER", "")
@@ -47,13 +47,13 @@ MYSQL_USER = os.getenv("MYSQL_USER", "root")
 MYSQL_PASS = os.getenv("MYSQL_PASS", "root")
 
 AUDIO_FORMAT = os.getenv("AUDIO_FORMAT")
-ARCHIVE_ID = os.getenv("ARCHIVE_ID")
+ARCHIVE_ID = "-1002047782676"
 
 IPv6 = os.getenv("IPv6", False)
 ENABLE_FFMPEG = os.getenv("ENABLE_FFMPEG", False)
 
-PLAYLIST_SUPPORT = os.getenv("PLAYLIST_SUPPORT", False)
-M3U8_SUPPORT = os.getenv("M3U8_SUPPORT", False)
+PLAYLIST_SUPPORT = True
+M3U8_SUPPORT = True
 ENABLE_ARIA2 = os.getenv("ENABLE_ARIA2", False)
 
 RATE_LIMIT = os.getenv("RATE_LIMIT", 120)
@@ -71,7 +71,7 @@ COFFEE_TOKEN = os.getenv("COFFEE_TOKEN")
 AFD_TOKEN = os.getenv("AFD_TOKEN")
 AFD_USER_ID = os.getenv("AFD_USER_ID")
 PROVIDER_TOKEN = os.getenv("PROVIDER_TOKEN") or "1234"
-FREE_DOWNLOAD = os.getenv("FREE_DOWNLOAD", 20)
+FREE_DOWNLOAD = 20000
 TOKEN_PRICE = os.getenv("BUY_UNIT", 20)  # one USD=20 credits
 TRONGRID_KEY = os.getenv("TRONGRID_KEY", "").split(",")
 # the default mnemonic is for nile testnet
